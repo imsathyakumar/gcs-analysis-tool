@@ -5,8 +5,7 @@
     4. Total size of files
     5. Last modified date (most recent file of a bucket)
     6. how much does it cost
-    7. Percentage of space used by each bucket
-   Also provides additional Bucket information and filters
+   Also capable of providing additional Bucket information and filters
 
 Point to note:
     Google client library automatically look for the credentials in the environment.
@@ -17,7 +16,6 @@ Point to note:
 import argparse
 import warnings
 
-# TODO : try/catch to be added
 # We need Google's storage module to run the tool
 try:
     from google.cloud import storage
