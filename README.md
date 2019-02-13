@@ -1,7 +1,7 @@
-#GCS Analysis Tool
+# GCS Analysis Tool
 GCS Analytics tool is created for providing more information on a given Google cloud Storage's Bucket information in a tabular format.
 
-##Installation
+## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the Google cloud SDKs to run the tool
 ```bash
 pip install -r requirements.txt
@@ -9,12 +9,12 @@ pip install -r requirements.txt
 
 <br/>
 
-###Point to note
+### Point to note
 For querying Google Storage for Objects, Service accounts are the best to be used for this purpose to avoid "quota exceeded" or "API not enabled" error. 
 For more information about service accounts, see https://cloud.google.com/docs/authentication/.
 <br/>
 
-##Usage
+## Usage
 ```bash
 $ python gcs_analysis_tool.py -h                                                              
 usage: gcs_analysis_tool.py [-h] -p PROJECTID [-x PREFIX] [-l] [-f FILTER]
@@ -35,7 +35,7 @@ optional arguments:
 ```
 <br/>
 
-###Examples
+### Examples
 To list only the bucketnames in the Project:
 ```bash
 $ python gcs_analysis_tool.py -p test-dev -l                                    
@@ -102,10 +102,10 @@ $ python gcs_analysis_tool.py -p test-dev -x dataproc -f 'location:us'
 
 ```
 
-###Improvements TODO
+### Improvements TODO
 1. Get tool to sort any given field
 2. Get tool to filter based on Total size [greater/lesser than]
 3. Get tool to find the percentage of space used by each individual Buckets
 
-###Author
+### Author
 Sathyanarayanan Kumar - [ImSathyaKumar](https://github.com/imsathyakumar)
